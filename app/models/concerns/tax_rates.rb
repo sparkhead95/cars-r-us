@@ -32,6 +32,8 @@ module TaxRates
         tax += vehicle.carbon_based? ? 945 : 935
       when 191..225
         tax += vehicle.carbon_based? ? 1420 : 1410
+      when 226..255
+        tax += vehicle.carbon_based? ? 2015 : 2005
       else
         tax += vehicle.carbon_based? ? 2365 : 2355
       end
